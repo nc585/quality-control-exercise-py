@@ -4,6 +4,13 @@ import os
 csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
 csv_headers = ["id", "name", "aisle", "department", "price"]
 
+#creating function in order to set up an organizational structure to pass first test 
+def read_from_csv(my_csv_filepath):
+    return []
+
+if __name__ == "__main__":
+    pass
+
 #
 # READ
 #
