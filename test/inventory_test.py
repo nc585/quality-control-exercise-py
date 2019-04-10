@@ -1,7 +1,7 @@
 import csv
 import os
 
-from app.inventory_app import read_from_csv, write_to_csv, autogen_id
+from app.inventory_app import read_from_csv #, write_to_csv, autogen_id
 
 # TODO: test logic for processing CSV file contents into a list of product dictionaries
 def test_read_from_csv():
@@ -10,6 +10,7 @@ def test_read_from_csv():
     default_products = read_from_csv(default_products_filepath)
 
     assert len(default_products) == 20
+    assert default_products[0]["name"] == "Chocolate Sandwich Cookies"
 
 
 # # TODO: test logic for writing a list of product dictionaries to a CSV file
